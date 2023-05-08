@@ -6,6 +6,6 @@ const instance = axios.create({
 });
 
 // EXAMPLE CALL
-// instance.get('/')
+instance.get('/')
 
 export default instance

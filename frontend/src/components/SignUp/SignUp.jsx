@@ -14,7 +14,7 @@ function SignUp({setShowSignUpComponent}) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
+
         if (password === confirmPassword) {
             setErrors([]);
             const newUsername = username.toLowerCase();
@@ -25,15 +25,13 @@ function SignUp({setShowSignUpComponent}) {
                 username: newUsername,
                 password: password,
             }
-            return dispatch(sessionActions.signup(signUpData))
-            .then(setShowSignUpComponent(false))
+            dispatch(sessionActions.signup(signUpData))
             .catch(async (res) => {
                 const data = await res.json();
                 if (data && data.errors) setErrors(data.errors);
                 });
-            }
-            return setErrors(['Passwords do not match!']);
-        };
+        } else return setErrors(['Passwords do not match!']);
+    };
 
     return (
         <>
@@ -89,7 +87,7 @@ function SignUp({setShowSignUpComponent}) {
                                 <img alt='side_arrow' src={sideArrow} className="signup-form-side-arrow" />
                             </button>
                         </form>
-                        <button onClick={() => setShowSignUpComponent(false)} className="back-add-profile-button">Back</button>
+                        <button onClick={() => setShowSignUpComponent(false)} className="sign-up-back-button">Back</button>
                     </div>
                 </div>
             </div>

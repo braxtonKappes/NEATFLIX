@@ -148,6 +148,20 @@
     text-align: center;
 }
 
+.sign-up-back-button{
+    background: #fff;
+    text-decoration: none;
+    border: none;
+    color: #000;
+    font-weight: 700;
+    display: block;
+    margin: 2em 0 1em 0;
+    font-size: 1.2vw;
+    padding: 0.5em 1.5em;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
 .signup-form-side-arrow{
     color: #fff;
     cursor: pointer;

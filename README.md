@@ -30,8 +30,11 @@ NETFLIX-CLONE is where you explore movies and tv shows to watch with family and 
     - npm start
 9. Start the services in the frontend directory, which should open the project in your deafult browser. If not, navigate to htt://localhost:3000.
 10. You can use the Demo user or create an account to begin using NETFLIX-CLONE.
-  
+
 # Features
 ### Logged in users can perform the following actions.
     - Add/View/Edit/Delete Profiles
     - Add/View/Edit/Delete Notes
+
+# Incoming Updates
+    - [] Video Hover Placeholder

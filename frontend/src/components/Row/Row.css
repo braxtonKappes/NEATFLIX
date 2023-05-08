@@ -22,7 +22,7 @@
     object-fit: contain;
 }
 
-.row-poster-container:hover > .hidden-div{
+.row-poster-container:hover > .hidden-div-wrapper > .hidden-div{
     display: flex;
     align-items: center;
 }
@@ -34,7 +34,11 @@
     object-fit: contain;
 }
 
-.row-poster-container.row-posterLarge:hover > .hidden-div{
+.hidden-div-wrapper {
+    height: 25px;
+}
+
+.row-poster-container.row-posterLarge:hover > .hidden-div-wrapper > .hidden-div{
     display: flex;
     align-items: center;
 }

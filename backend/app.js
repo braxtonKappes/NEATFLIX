@@ -34,7 +34,7 @@ app.use(
       sameSite: isProduction && "Lax",
       httpOnly: true,
     },
-  })
+  }),
 );
 
 app.use(routes); // Connect all the routes
