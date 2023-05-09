@@ -37,4 +37,4 @@ NETFLIX-CLONE is where you explore movies and tv shows to watch with family and 
     - Add/View/Edit/Delete Notes
 
 # Incoming Updates
-    - [] Video Hover Placeholder
+    - [ ] Video Hover Placeholder
